@@ -14,7 +14,7 @@ A FastAPI-based REST API that predicts insurance premium categories (low, medium
 
 ```
 insurance_premium_predictor/
-├── app.py                      # FastAPI application entry point
+├── main.py                     # FastAPI application entry point
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project documentation
 ├── .gitignore                  # Git ignore rules
@@ -67,7 +67,7 @@ insurance_premium_predictor/
 Start the development server:
 
 ```bash
-uvicorn app:app --reload
+uvicorn main:app --reload
 ```
 
 The API will be available at `http://127.0.0.1:8000`
