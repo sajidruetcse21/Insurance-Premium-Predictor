@@ -17,6 +17,7 @@ insurance_premium_predictor/
 ├── main.py                     # FastAPI application entry point
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Project documentation
+├── Dockerfile                  # Docker container configuration
 ├── .gitignore                  # Git ignore rules
 ├── config/
 │   └── city_tier.py            # City tier classifications (Tier 1, 2, 3)
@@ -72,7 +73,23 @@ uvicorn main:app --reload
 
 The API will be available at `http://127.0.0.1:8000`
 
-## 📚 API Endpoints
+## � Docker
+
+### Build the Docker Image
+
+```bash
+docker build -t insurance-premium-predictor .
+```
+
+### Run the Container
+
+```bash
+docker run -d -p 8000:8000 insurance-premium-predictor
+```
+
+The API will be available at `http://localhost:8000`
+
+## �📚 API Endpoints
 
 ### `GET /`
 Welcome message
