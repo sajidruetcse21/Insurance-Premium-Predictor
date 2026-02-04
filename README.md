@@ -39,7 +39,7 @@ insurance_premium_predictor/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/sajid1495/Insurance-Premium-Predictor.git
+   git clone https://github.com/sajidruetcse21/Insurance-Premium-Predictor.git
    cd Insurance-Premium-Predictor
    ```
 
